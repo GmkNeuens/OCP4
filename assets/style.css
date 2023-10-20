@@ -1,0 +1,165 @@
+/****** General ***********/
+* {
+  font-family: "Roboto";
+}
+
+:root {
+  --main-color: #9356dc;
+  --main-bg-color: #F6F6F6;
+  --green-bg-color: #99e2d0;
+  --green-font-color: #008766;
+  --blue-color: #89c8fa;
+  --blue2-color: #003a68;
+}
+
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 768px;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .logo {
+  width: 100%;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 162px;
+}
+
+header .form {
+  width: 100%;
+  height: 50px;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+form {
+  display: flex;
+  gap: 17px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 120px;
+  border: none;
+  background-color: #eaeaea;
+  font-size: 16px;
+  font-weight: 500;
+  color: #353535;
+}
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-bg-color);
+}
+
+h1 {
+  margin-top: 39px;
+  margin-bottom: 0;
+  width: 275px;
+  height: 68px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.title-section p {
+  margin: 0;
+  width: 315px;
+  height: 46px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  color: #353535;
+}
+
+.title-section button {
+  margin-top: 27px;
+  margin-bottom: 57px;
+  width: 218px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background: var(
+    --Button-Gradient,
+    linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
+  );
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 13px 18.75px;
+  font-size: 16px;
+  color: white;
+}
+
+.use-section {
+    height: 440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.use-section_title {
+    margin-top: 48px;
+    margin-bottom: 26px;
+    margin-left: 20px;
+    width: 275px;
+    height: 31px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.use-card-listing {
+    margin-bottom: 68px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.use-card {
+    margin-left: 32px;
+    margin-right: 20px;
+    height: inherit;
+    border-radius: 20px;
+    background-color: var(--main-bg-color);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+}
+
+.use-card-content {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    position: relative;
+    right: 12px;
+}
