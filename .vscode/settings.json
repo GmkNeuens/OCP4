@@ -1,4 +1,4 @@
-"liveSassCompile.settings.formats": [
+{"liveSassCompile.settings.formats": [
     {
         "format": "compressed",
         "extensionName": ".min.css",
@@ -6,3 +6,4 @@
     }
 ],
 "liveSassCompile.settings.autoprefix": null
+}
