@@ -1,7 +1,4 @@
 /****** General ***********/
-* {
-  font-family: "Roboto", sans-serif;
-}
 
 :root {
   --main-color: #9356dc;
@@ -17,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .main-container {
