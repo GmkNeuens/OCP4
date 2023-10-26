@@ -299,7 +299,6 @@ footer {
   font-family: Shrikhand;
   color: white;
   font-size: 18px;
-  font-weight: 400;
 }
 
 footer nav {
@@ -307,6 +306,4 @@ footer nav {
   flex-direction: column;
   gap: 7px;
   color: white;
-  font-size: 16px;
-  font-weight: 500;
 }
