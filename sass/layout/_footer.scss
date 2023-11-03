@@ -1,0 +1,19 @@
+footer {
+    padding: 22px 25px;
+    background-color: $dark-grey-color;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .footer-title {
+        font-family: $secundary-font;
+        color: $white;
+        font-size: 18px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        color: $white;
+    }
+}
+  

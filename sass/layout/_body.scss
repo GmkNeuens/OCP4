@@ -1,0 +1,12 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: $primary-font
+}
+
+.main-container {
+    width: 100%;
+    box-sizing: border-box;
+}

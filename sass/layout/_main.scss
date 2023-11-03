@@ -1,0 +1,190 @@
+main img {
+    width: 100%;
+    display: block;
+}
+
+.titlesection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $main-bg-color;
+}
+  
+.usesection {
+    height: 440px;
+    display: flex;
+    flex-direction: column;  
+    .usesection_listing {
+        margin-bottom: 68px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+.usecard {
+    margin-left: 32px;
+    margin-right: 20px;
+    height: inherit;
+    border-radius: 20px;
+    background-color: $main-bg-color;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    display: flex;  
+    .usecard_content {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        position: relative;
+        right: 12px;
+        span {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: $main-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+  
+
+  
+.use-icon-box {
+    width: 25px;
+    display: flex;
+}
+  
+.use-icons {
+    fill: #7E7E7E;
+}
+  
+.use-icons-purple {
+    fill: $main-color;
+}
+  
+.phone-icon {
+    width: 25px;
+    height: 21px;
+}
+  
+.menu-icon {
+    width: 25px;
+    height: 17px;
+}
+  
+.store-icon {
+    width: 25px;
+    height: 19px;
+}
+  
+.restaurants-section {
+    display: flex;
+    flex-direction: column;
+    background-color: $main-bg-color;
+}
+  
+.restaurant-card-listing {
+    padding-bottom: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+  
+.restaurant-card {
+    width: 340px;
+    height: 250px;
+    margin: 0 18px 0 18px;
+    border-radius: 15px;
+    background-color: $white;
+}
+  
+.restaurant-card-image {
+    position: relative;
+}
+  
+.restaurant-card img {
+    width: 340px;
+    height: 175px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+  
+.new-card-tag {
+    width: 80px;
+    height: 30px;
+    border-radius: 2px;
+    background: $green-bg-color;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    color: $green-font-color;
+    position: absolute;
+    left: 248px;
+    bottom: 137px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.restaurant-card-content {
+    padding-right: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.restaurant-card-title {
+    margin: 16px 13px 16px 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.restaurant-menu {
+    position: relative;
+    margin-top: -40px;
+    padding: 0 13px;
+    border-radius: 40px 40px;
+    background-color: $main-bg-color;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .restaurant-menu-title {
+        margin: 32px 4px 0 4px;
+        padding-right: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        article {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 15px;
+            border-radius: 15px;
+            background-color: $white;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+            display: flex;
+            justify-content: space-between;
+            .card-title {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            .card-price {
+                display: flex;
+                align-items: end;
+            }
+        }
+    }
+}
