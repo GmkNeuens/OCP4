@@ -1,22 +1,15 @@
-.use-icons {
-    fill: #7E7E7E;
+.fa-location-dot {
+    color: $dark-grey;
 }
-  
-.use-icons-purple {
-    fill: $main-color;
+
+.fa-mobile-screen-button {
+    color: $middle-grey;
 }
-  
-.phone-icon {
-    width: 25px;
-    height: 21px;
+
+.fa-list-ul {
+    color: $middle-grey;
 }
-  
-.menu-icon {
-    width: 25px;
-    height: 17px;
-}
-  
-.store-icon {
-    width: 25px;
-    height: 19px;
+
+.fa-store {
+    color: $main-color;
 }

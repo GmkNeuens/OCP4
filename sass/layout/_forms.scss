@@ -2,7 +2,7 @@
 .locationform {
     width: 100%;
     height: 50px;
-    background-color: $light-grey-color;
+    background-color: $light-grey;
     box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     @include displayFlex(center,center,null,null,wrap);
     form {
@@ -14,16 +14,16 @@
     .formlabel_icon {
         width: 12px;
         height: 17px;
-        fill: $dark-grey-color;
+        fill: $dark-grey;
     }
     input {
         width: 120px;
         border: none;
-        background-color: $light-grey-color;
+        background-color: $light-grey;
         font-family: $primary-font;
         font-size: 16px;
         font-weight: 500;
-        color: $dark-grey-color;
+        color: $dark-grey;
     }
 }
  

@@ -1,23 +1,19 @@
-.button {
-  display: flex;
-  justify-content: center;
-  button {
-    width: 218px;
-    height: 50px;
-    border: none;
-    border-radius: 25px;
-    background: $gradient;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    padding: 13px 18.75px;
-    font-family: "Roboto",sans-serif;
-    font-size: 16px;
-    color: $white;
-    &.explore {
+button {
+  width: 218px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background: $gradient;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 13px 18.75px;
+  font-family: "Roboto",sans-serif;
+  font-size: 16px;
+  color: $white;
+  &.button_explore {
       margin-top: 27px;
       margin-bottom: 57px;
-    }
-    &.order {
-      margin: 40px 0;
-    }
-    }
-}
+  }
+  &.button_order {
+    margin: 40px 0;
+  }
+  }

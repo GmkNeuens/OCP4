@@ -54,7 +54,7 @@ p {
       text-align: center;
       font-size: 18px;
       font-weight: 300;
-      color: $dark-grey-color;
+      color: $dark-grey;
     }
     &.restaurantsection_p {
       font-size: 17px;
@@ -86,8 +86,8 @@ a {
   color: $white;
 }
 
-.card-price {
+.card_price {
   font-size: 15px;
   font-weight: 700;
-  color: $dark-grey-color;
+  color: $dark-grey;
 }

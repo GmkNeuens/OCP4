@@ -1,17 +1,17 @@
 /* COLORS */
 $main-color: #9356dc;
 $main-bg-color: #f6f6f6;
-$green-bg-color: #99e2d0;
-$green-font-color: #008766;
-$blue-color: #89c8fa;
-$blue2-color: #003a68;
-$dark-grey-color: #353535;
-$light-grey-color: #eaeaea;
+$light-green: #99e2d0;
+$dark-green: #008766;
+$pink: #ff79da;
+$dark-grey: #353535;
+$middle-grey: #7e7e7e;
+$light-grey: #eaeaea;
 $white: #FFFFFF;
 $black: #101010;
 
 /* GRADIENTS */
-$gradient: linear-gradient(193deg, $main-color -11.44%, #ff79da 123.93%);
+$gradient: linear-gradient(to top, $main-color, $pink);
 
 /* FONTS */
 $primary-font: "Roboto", sans-serif;

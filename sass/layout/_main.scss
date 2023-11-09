@@ -6,6 +6,9 @@ main img {
 .titlesection {
     @include displayFlex(null,center,column);
     background-color: $main-bg-color;
+    .button {
+        @include displayFlex(center);
+    }
 }
   
 .usesection {
@@ -37,29 +40,29 @@ main img {
             background-color: $main-color;
             @include displayFlex(center,center);
         }  
-        .use-icon-box {
+        .usecard_iconbox {
             width: 25px;
             display: flex;
         }
     }
 }
 
-.restaurants-section {
+.restaurantsection {
     @include displayFlex(null,null,column);
     background-color: $main-bg-color;  
-    .restaurant-card-listing {
+    .restaurantsection_listing {
         padding-bottom: 66px;
         @include displayFlex(null,center,column,18px);
     }
 }
 
-.restaurant-card {
+.restaurantcard {
     width: 340px;
     height: 250px;
     margin: 0 18px 0 18px;
     border-radius: 15px;
     background-color: $white;  
-    .restaurant-card-image {
+    .restaurantcard_image {
         position: relative;
     }
     img {
@@ -69,24 +72,24 @@ main img {
         border-top-right-radius: 15px;
         object-fit: cover;
     }  
-    .restaurant-card-content {
+    .restaurantcard_content {
         padding-right: 25px;
         @include displayFlex(space-between,center,row); 
-        .restaurant-card-title {
+        .restaurantcard_content_title {
             margin: 16px 13px 16px 13px;
             @include displayFlex(null,null,column);
         }
     }
 }
   
-.new-card-tag {
+.newcardtag {
     width: 80px;
     height: 30px;
     border-radius: 2px;
-    background: $green-bg-color;
+    background: $light-green;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     font-size: 14px;
-    color: $green-font-color;
+    color: $dark-green;
     position: absolute;
     left: 248px;
     bottom: 137px;
@@ -95,17 +98,21 @@ main img {
 
 
 
-.restaurant-menu {
+.restaurantmenu {
     position: relative;
     margin-top: -40px;
     padding: 0 13px;
     border-radius: 40px 40px;
     background-color: $main-bg-color;
     @include displayFlex(null,null,column,40px);
-    .restaurant-menu-title {
+    .restaurantmenu_title {
         margin: 32px 4px 0 4px;
         padding-right: 24px;
-        @include displayFlex(space-between,center,row);
+        @include displayFlex(space-between,null,row);
+        .restaurantmenu_iconbox {
+            position: relative;
+            top: 8px;
+        }
     }
     section {
         @include displayFlex(null,null,column,12px);
@@ -117,14 +124,14 @@ main img {
             background-color: $white;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
             @include displayFlex(space-between);
-            .card-content {
+            .card_content {
                 @include displayFlex(space-between);
                 width: 100%;
                 margin: 0 15px;
-                .card-title {
+                .card_title {
                     @include displayFlex(center,null,column,5px);
                 }
-                .card-price {
+                .card_price {
                     @include displayFlex(null,end);
                     margin-bottom: 10px;
                 }
