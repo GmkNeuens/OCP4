@@ -1,8 +1,4 @@
-@import 'utils/variables';
+@import 'utils/variables','utils/mixins';
 @import 'base/typography';
-@import 'layout/body';
-@import 'layout/header';
-@import 'layout/main';
-@import 'layout/footer';
-@import 'layout/forms';
-@import 'components/buttons';
+@import 'layout/body','layout/header','layout/main','layout/footer','layout/forms';
+@import 'components/buttons','components/icons';

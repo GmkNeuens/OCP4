@@ -4,22 +4,17 @@ main img {
 }
 
 .titlesection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include displayFlex(null,center,column);
     background-color: $main-bg-color;
 }
   
 .usesection {
     height: 440px;
-    display: flex;
-    flex-direction: column;  
+    @include displayFlex(null,null,column); 
     .usesection_listing {
         margin-bottom: 68px;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
+        @include displayFlex(null,null,column,25px);
     }
 }
 
@@ -32,9 +27,7 @@ main img {
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     display: flex;  
     .usecard_content {
-        display: flex;
-        align-items: center;
-        gap: 23px;
+        @include displayFlex(null,center,null,23px);
         position: relative;
         right: 12px;
         span {
@@ -42,76 +35,48 @@ main img {
             height: 24px;
             border-radius: 50%;
             background-color: $main-color;
+            @include displayFlex(center,center);
+        }  
+        .use-icon-box {
+            width: 25px;
             display: flex;
-            justify-content: center;
-            align-items: center;
         }
     }
 }
 
-  
-
-  
-.use-icon-box {
-    width: 25px;
-    display: flex;
-}
-  
-.use-icons {
-    fill: #7E7E7E;
-}
-  
-.use-icons-purple {
-    fill: $main-color;
-}
-  
-.phone-icon {
-    width: 25px;
-    height: 21px;
-}
-  
-.menu-icon {
-    width: 25px;
-    height: 17px;
-}
-  
-.store-icon {
-    width: 25px;
-    height: 19px;
-}
-  
 .restaurants-section {
-    display: flex;
-    flex-direction: column;
-    background-color: $main-bg-color;
+    @include displayFlex(null,null,column);
+    background-color: $main-bg-color;  
+    .restaurant-card-listing {
+        padding-bottom: 66px;
+        @include displayFlex(null,center,column,18px);
+    }
 }
-  
-.restaurant-card-listing {
-    padding-bottom: 66px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-}
-  
+
 .restaurant-card {
     width: 340px;
     height: 250px;
     margin: 0 18px 0 18px;
     border-radius: 15px;
-    background-color: $white;
-}
-  
-.restaurant-card-image {
-    position: relative;
-}
-  
-.restaurant-card img {
-    width: 340px;
-    height: 175px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    object-fit: cover;
+    background-color: $white;  
+    .restaurant-card-image {
+        position: relative;
+    }
+    img {
+        width: 340px;
+        height: 175px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        object-fit: cover;
+    }  
+    .restaurant-card-content {
+        padding-right: 25px;
+        @include displayFlex(space-between,center,row); 
+        .restaurant-card-title {
+            margin: 16px 13px 16px 13px;
+            @include displayFlex(null,null,column);
+        }
+    }
 }
   
 .new-card-tag {
@@ -125,23 +90,7 @@ main img {
     position: absolute;
     left: 248px;
     bottom: 137px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-.restaurant-card-content {
-    padding-right: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-  
-.restaurant-card-title {
-    margin: 16px 13px 16px 13px;
-    display: flex;
-    flex-direction: column;
+    @include displayFlex(center,center);
 }
 
 
@@ -152,38 +101,33 @@ main img {
     padding: 0 13px;
     border-radius: 40px 40px;
     background-color: $main-bg-color;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    @include displayFlex(null,null,column,40px);
     .restaurant-menu-title {
         margin: 32px 4px 0 4px;
         padding-right: 24px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        @include displayFlex(space-between,center,row);
     }
     section {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
+        @include displayFlex(null,null,column,12px);
         article {
+            height: 69px;
             margin-left: 0px;
             margin-right: 0px;
-            padding: 15px;
             border-radius: 15px;
             background-color: $white;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
-            display: flex;
-            justify-content: space-between;
-            .card-title {
-                display: flex;
-                flex-direction: column;
-                gap: 5px;
-            }
-            .card-price {
-                display: flex;
-                align-items: end;
+            @include displayFlex(space-between);
+            .card-content {
+                @include displayFlex(space-between);
+                width: 100%;
+                margin: 0 15px;
+                .card-title {
+                    @include displayFlex(center,null,column,5px);
+                }
+                .card-price {
+                    @include displayFlex(null,end);
+                    margin-bottom: 10px;
+                }
             }
         }
     }

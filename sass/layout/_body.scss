@@ -1,8 +1,6 @@
 body {
     margin: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include displayFlex(center,null,column);
     font-family: $primary-font
 }
 
