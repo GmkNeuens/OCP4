@@ -1,6 +1,8 @@
 main img {
     width: 100%;
+    height: 275px;
     display: block;
+    object-fit: cover;
 }
 
 .titlesection {
@@ -106,13 +108,16 @@ main img {
         margin: 32px 4px 0 4px;
         padding-right: 24px;
         @include displayFlex(space-between,null,row);
-        .restaurantmenu_iconbox {
+        .hearticons {
             position: relative;
             top: 8px;
         }
     }
     section {
         @include displayFlex(null,null,column,12px);
+        .sectiontitle {
+            @include displayFlex(null,null,column,3px);
+        }
         article {
             height: 69px;
             margin-left: 0px;
