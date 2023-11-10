@@ -1,4 +1,404 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>La note enchantée</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/CSS/styles.min.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header>
+        <a href="../index.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+          >
+            <path
+              d="M15.8856 21.9283L15.0335 22.7417C14.6727 23.0861 14.0892 23.0861 13.7323 22.7417L6.2706 15.6229C5.9098 15.2785 5.9098 14.7215 6.2706 14.3808L13.7323 7.2583C14.0931 6.9139 14.6765 6.9139 15.0335 7.2583L15.8856 8.07167C16.2502 8.41974 16.2425 8.98763 15.8702 9.32837L11.2451 13.5345H22.2764C22.7869 13.5345 23.1976 13.9265 23.1976 14.4138V15.5862C23.1976 16.0735 22.7869 16.4655 22.2764 16.4655H11.2451L15.8702 20.6716C16.2464 21.0124 16.254 21.5803 15.8856 21.9283Z"
+              fill="#353535"
+            />
+          </svg>
+        </a>
+        <div class="logo">
+          <img
+            src="../assets/images/logo/ohmyfood.png"
+            srcset="../assets/images/logo/ohmyfood@2x.svg"
+            alt="logo ohmyfood"
+          />
+        </div>
+      </header>
+
+      <main>
+        <img
+          src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+        />
+        <div class="restaurantmenu">
+          <div class="restaurantmenu_title">
+            <h1 class="restaurantmenu_h1">La palette du goût</h1>
+            <div class="restaurantmenu_iconbox">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="21"
+                viewBox="0 0 23 21"
+                fill="none"
+              >
+                <path
+                  d="M12.7206 2.40551L12.7203 2.40576L11.8739 3.35732L11.5003 3.77727L11.1267 3.35732L10.2802 2.40576L10.2797 2.40514C8.28247 0.152585 5.09737 -0.169649 2.9764 1.80201C0.482212 4.1245 0.344816 8.32357 2.58455 10.8495L10.8987 20.2148C10.8987 20.2149 10.8988 20.2149 10.8988 20.2149C11.237 20.5955 11.7593 20.5955 12.0975 20.2149C12.0975 20.2149 12.0975 20.2149 12.0976 20.2148L20.4119 10.8493L20.412 10.8492C22.6556 8.32335 22.5183 4.12461 20.0243 1.80213L12.7206 2.40551ZM12.7206 2.40551C14.7223 0.15233 17.9032 -0.169452 20.024 1.80187L12.7206 2.40551Z"
+                  stroke="#101010"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="21"
+                viewBox="0 0 23 21"
+                fill="none"
+              >
+                <path
+                  d="M20.3647 1.4363C18.01 -0.752765 14.5081 -0.359015 12.3468 2.0738L11.5003 3.02536L10.6538 2.0738C8.49677 -0.359015 4.99052 -0.752765 2.63583 1.4363C-0.0626076 3.9488 -0.204405 8.45817 2.21044 11.1816L10.5249 20.5472C11.062 21.1519 11.9343 21.1519 12.4714 20.5472L20.7858 11.1816C23.205 8.45817 23.0632 3.9488 20.3647 1.4363Z"
+                  fill="url(#paint0_linear_25368_712)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_25368_712"
+                    x1="11.5"
+                    y1="-5.45973"
+                    x2="3.93419"
+                    y2="27.9927"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#9356DC" />
+                    <stop offset="1" stop-color="#FF79DA" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <section>
+            <h2 class="course_h2">ENTRÉES</h2>
+            <article>
+              <div class="card_content">
+                <div class="card_title">
+                  <h3 class="course_h3">Ravioles de foie gras</h3>
+                  <p class="course_p">Accompagnées de leur crème à la truffe</p>
+                </div>
+                <div class="card_price">
+                  <span>25</span>
+                  <span>€</span>
+                </div>
+              </div>
+              <div class="coche-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="69"
+                  viewBox="0 0 60 69"
+                  fill="none"
+                >
+                  <path
+                    d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0"
+                  />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </article>
+            <article>
+              <div class="card_content">
+                <div class="card_title">
+                  <h3 class="course_h3">Caviar osciètre</h3>
+                  <p class="course_p">Sur blini à la farine de blé noir</p>
+                </div>
+                <div class="card_price">
+                  <span>35</span>
+                  <span>€</span>
+                </div>
+              </div>
+              <div class="coche-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="69"
+                  viewBox="0 0 60 69"
+                  fill="none"
+                >
+                  <path
+                    d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0"
+                  />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </article>
+            <article>
+              <div class="card_content">
+                <div class="card_title">
+                  <h3 class="course_h3">Homard et espuma de potiron</h3>
+                  <p class="course_p">Marinés aux zestes d'orange</p>
+                </div>
+                <div class="card_price">
+                  <span>20</span>
+                  <span>€</span>
+                </div>
+              </div>
+              <div class="coche-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="69"
+                  viewBox="0 0 60 69"
+                  fill="none"
+                >
+                  <path
+                    d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0"
+                  />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </article>
+          </section>
+          <section>
+            <h2 class="course_h2">PLATS</h2>
+            <article>
+              <div class="card_content">
+                <div class="card_title">
+                  <h3 class="course_h3">Noix de coquilles Saint-Jacques</h3>
+                  <p class="course_p">Sur lit de purée de céleri-rave</p>
+                </div>
+                <div class="card_price">
+                  <span>40</span>
+                  <span>€</span>
+                </div>
+              </div>
+              <div class="coche-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="69"
+                  viewBox="0 0 60 69"
+                  fill="none"
+                >
+                  <path
+                    d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0"
+                  />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </article>
+            <article>
+              <div class="card_content">
+                <div class="card_title">
+                  <h3 class="course_h3">Langoustine poêlée</h3>
+                  <p class="course_p">Purée de patate douce</p>
+                </div>
+                <div class="card_price">
+                  <span>35</span>
+                  <span>€</span>
+                </div>
+              </div>
+              <div class="coche-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="69"
+                  viewBox="0 0 60 69"
+                  fill="none"
+                >
+                  <path
+                    d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0"
+                  />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </article>
+            <article>
+              <div class="card_content">
+                <div class="card_title">
+                  <h3 class="course_h3">Mijoté de queue de bœuf</h3>
+                  <p class="course_p">Et riz sauvage aux zestes de citron</p>
+                </div>
+                <div class="card_price">
+                  <span>44</span>
+                  <span>€</span>
+                </div>
+              </div>
+              <div class="coche-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="69"
+                  viewBox="0 0 60 69"
+                  fill="none"
+                >
+                  <path
+                    d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0"
+                  />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </article>
+          </section>
+          <section>
+            <h2 class="course_h2">DESSERTS</h2>
+            <article>
+              <div class="card_content">
+                <div class="card_title">
+                  <h3 class="course_h3">Macaron noisette et chocolat</h3>
+                  <p class="course_p">
+                    Glace au caramel brun et sel de Guérande
+                  </p>
+                </div>
+                <div class="card_price">
+                  <span>18</span>
+                  <span>€</span>
+                </div>
+              </div>
+              <div class="coche-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="69"
+                  viewBox="0 0 60 69"
+                  fill="none"
+                >
+                  <path
+                    d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0"
+                  />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </article>
+            <article>
+              <div class="card_content">
+                <div class="card_title">
+                  <h3 class="course_h3">Baba au rhum revisité</h3>
+                  <p class="course_p">Avec son coulis de citron</p>
+                </div>
+                <div class="card_price">
+                  <span>22</span>
+                  <span>€</span>
+                </div>
+              </div>
+              <div class="coche-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="69"
+                  viewBox="0 0 60 69"
+                  fill="none"
+                >
+                  <path
+                    d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0"
+                  />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </article>
+            <article>
+              <div class="card_content">
+                <div class="card_title">
+                  <h3 class="course_h3">Tarte au citron meringuée</h3>
+                  <p class="course_p">Déstructurée</p>
+                </div>
+                <div class="card_price">
+                  <span>23</span>
+                  <span>€</span>
+                </div>
+              </div>
+              <div class="coche-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="69"
+                  viewBox="0 0 60 69"
+                  fill="none"
+                >
+                  <path
+                    d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                    fill="#99E2D0"
+                  />
+                  <path
+                    d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </article>
+          </section>
+        </div>
+        <div class="button">
+          <button type="submit" title="Commander" class="button_order">
+            Commander
+          </button>
+        </div>
+      </main>
+
+      <footer>
+        <span class="footer_title">ohmyfood</span>
+        <nav>
+          <a href="#">
+            <i class="fa-solid fa-utensils"></i>
+            <span>Proposer un restaurant</span>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <span>Devenir partenaire</span>
+          </a>
+          <a href="#">Mentions légales</a>
+          <a href="#">Contact</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
 </html>

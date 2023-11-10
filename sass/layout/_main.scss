@@ -6,9 +6,6 @@ main img {
 .titlesection {
     @include displayFlex(null,center,column);
     background-color: $main-bg-color;
-    .button {
-        @include displayFlex(center);
-    }
 }
   
 .usesection {

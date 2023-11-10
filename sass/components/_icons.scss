@@ -13,3 +13,24 @@
 .fa-store {
     color: $main-color;
 }
+
+.fa-utensils {
+    font-size: 13px;
+}
+
+.fa-handshake-angle {
+    font-size: 13px;
+}
+
+.hearticons {
+    position: relative;
+    &:hover .filledhearticon {
+        transform: scale(1);
+    }
+    .filledhearticon {
+        position: absolute;
+        right: 0;
+        scale: 0;
+    }
+    
+}
