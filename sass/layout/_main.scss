@@ -119,6 +119,7 @@ main img {
             @include displayFlex(null,null,column,3px);
         }
         article {
+            overflow: hidden;
             height: 69px;
             margin-left: 0px;
             margin-right: 0px;
@@ -128,14 +129,16 @@ main img {
             @include displayFlex(space-between);
             .card_content {
                 @include displayFlex(space-between);
+                @extend .text-ellips;
                 width: 100%;
                 margin: 0 15px;
                 .card_title {
                     @include displayFlex(center,null,column,5px);
+                    @extend .text-ellips;
                 }
                 .card_price {
                     @include displayFlex(null,end);
-                    margin-bottom: 10px;
+                    margin-bottom: 12px;
                 }
             }
         }

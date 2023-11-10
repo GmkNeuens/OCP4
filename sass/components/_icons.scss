@@ -39,13 +39,13 @@
 
 article {
     &:hover .selecticon {
-        left: 0;
+        width: 60px;
     }
 }
 
 .selecticon {
-    left: 100%;
-    transition-property: left;
+    width: 0;
+    transition-property: width;
     transition-duration: 200ms;
 }
 
