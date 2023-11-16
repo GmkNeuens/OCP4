@@ -1,4 +1,4 @@
-@keyframes loader {
+@keyframes body__loader {
     0% {visibility: visible;}
     50% {visibility: visible; height: 100%;}
     75% {visibility: visible; opacity: 100%; height: 56px;}
@@ -6,7 +6,7 @@
 }
 
 @include respondTo(md) {
-    @keyframes loader {
+    @keyframes body__loader {
         0% {visibility: visible;}
         50% {visibility: visible; height: 100%;}
         75% {visibility: visible; opacity: 100%; height: 88px;}
@@ -14,7 +14,7 @@
     }
 }
 
-@keyframes loader-content {
+@keyframes body__loader__content {
     25% {transform: translateY(0); font-size: 50px;}
     50% {transform: translateY(0); font-size: 50px; color: $main-bg-color;}
     75% {transform: translateY(0); font-size: 30px; color: $black;}

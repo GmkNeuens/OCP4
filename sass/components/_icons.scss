@@ -27,27 +27,27 @@
     &:hover .filledhearticon {
         scale: 1;
     }
+    .filledhearticon {
+        position: absolute;
+        left: 0;
+        scale: 0;
+        transition-property: scale;
+        transition-duration: 200ms;
+    }
 }
 
-.filledhearticon {
-    position: absolute;
-    left: 0;
-    scale: 0;
-    transition-property: scale;
-    transition-duration: 200ms;
-}
 
 article {
     &:hover .selecticon {
         width: 60px;
     }
+    .selecticon {
+        width: 0;
+        transition-property: width;
+        transition-duration: 200ms;
+    }
 }
 
-.selecticon {
-    width: 0;
-    transition-property: width;
-    transition-duration: 200ms;
-}
 
 hr {
     margin: 0;

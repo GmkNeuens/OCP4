@@ -1,30 +1,28 @@
 body {
     margin: 0px;
-    font-family: $primary-font
-}
-
-.loader {
-    @include displayFlex(center,center);
-    visibility: hidden;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    background-color: $main-color;
-    animation-name: loader;
-    animation-duration: 4s;
-    .loader-content {
-        font-family: $secundary-font;
-        font-size: 50px;
-        color: $main-bg-color;
-        transform: translateY(1080px);
-        animation-name: loader-content;
-        animation-duration: 3s;
-        animation-delay: 1s;
+    font-family: $primary-font;
+    .body__loader {
+        @include displayFlex(center,center);
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        background-color: $main-color;
+        animation-name: body__loader;
+        animation-duration: 4s;
+        .body__loader__content {
+            font-family: $secundary-font;
+            font-size: 50px;
+            color: $main-bg-color;
+            transform: translateY(1080px);
+            animation-name: body__loader__content;
+            animation-duration: 3s;
+            animation-delay: 1s;
+        }
     }
-}
-
-.main-container {
-    width: 100%;
-    box-sizing: border-box;
+    .main-container {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }

@@ -1,39 +1,87 @@
-main img {
-    width: 100%;
-    height: 275px;
-    display: block;
-    object-fit: cover;
-    @include respondTo(md) {
-        height : 382px;
-    }
-}
-
-.titlesection {
-    @include displayFlex(null,center,column);
-    background-color: $main-bg-color;
-    padding-top: 39px;
-    padding-bottom: 57px;
-    gap: 18px;
-    @include respondTo(md) {
-        padding: 30px;
-    }
-}
-  
-.usesection {
-    @include displayFlex(null,null,column); 
-    padding: 48px 20px 68px 20px;
-    .usesection_listing {
-        @include displayFlex(null,null,column,25px);
+main {
+    img {
+        width: 100%;
+        height: 275px;
+        display: block;
+        object-fit: cover;
         @include respondTo(md) {
-            @include displayFlex(null,null,row,25px);
+            height : 382px;
         }
     }
-    @include respondTo(md) {
-        padding: 50px 20px;
+    .titlesection {
+        @include displayFlex(null,center,column,18px);
+        background-color: $main-bg-color;
+        padding: 39px 0 57px 0;
+        @include respondTo(md) {
+            padding: 30px;
+        }
     }
-    @include respondTo(lg) {
-        padding: 50px 180px;
+    .usesection {
+        @include displayFlex(null,null,column); 
+        padding: 48px 20px 68px 20px;
+        .usesection__listing {
+            @include displayFlex(null,null,column,25px);
+            @include respondTo(md) {
+                @include displayFlex(null,null,row,25px);
+            }
+        }
+        @include respondTo(md) {
+            padding: 50px 20px;
+        }
+        @include respondTo(lg) {
+            padding: 50px 180px;
+        }
     }
+    .restaurantsection {
+        @include displayFlex(null,null,column);
+        background-color: $main-bg-color;
+        padding: 48px 17px 66px 17px;
+        @include respondTo(lg) {
+            padding: 50px 180px;
+        }  
+        .restaurantsection__listing {
+            @include displayGrid(null,null,18px,18px);
+            @include respondTo(md) {
+                @include displayGrid(repeat(2,1fr),null,100px,50px);
+            }
+        }
+    }
+    .restaurantmenu {
+        position: relative;
+        margin-top: -40px;
+        padding: 0 13px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        background-color: $main-bg-color;
+        @include displayFlex(null,null,column,40px);
+        @include respondTo(md) {
+            padding: 0 210px 0 210px;
+        }
+        @include respondTo(lg) {
+            margin-left:180px;
+            margin-right: 180px;
+        }
+        .restaurantmenu_title {
+            margin: 32px 4px 0 4px;
+            padding-right: 24px;
+            @include displayFlex(space-between);
+            .hearticons {
+                position: relative;
+                top: 8px;
+            }
+            @include respondTo(md) {
+                margin: 51px 0 0 0;
+                @include displayFlex(center,null,null,24px)
+            }
+        }
+        section {
+            @include displayFlex(null,null,column,12px);
+            .sectiontitle {
+                @include displayFlex(null,null,column,3px);
+            }
+        }
+    }
+    
 }
 
 .usecard {
@@ -66,26 +114,24 @@ main img {
     }
 }
 
-.restaurantsection {
-    @include displayFlex(null,null,column);
-    background-color: $main-bg-color;
-    padding: 48px 17px 66px 17px;
-    @include respondTo(lg) {
-        padding: 50px 180px;
-    }  
-    .restaurantsection_listing {
-        @include displayGrid(null,null,18px,18px);
-        @include respondTo(md) {
-            @include displayGrid(repeat(2,1fr),null,100px,50px);
-        }
-    }
-}
-
 .restaurantcard {
     border-radius: 15px;
     background-color: $white;  
     .restaurantcard_image {
-        position: relative;
+        position: relative;  
+        .newcardtag {
+            width: 80px;
+            height: 30px;
+            border-radius: 2px;
+            background: $light-green;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+            font-size: 14px;
+            color: $dark-green;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            @include displayFlex(center,center);
+        }        
     }
     img {
         width: 100%;
@@ -103,79 +149,28 @@ main img {
         }
     }
 }
-  
-.newcardtag {
-    width: 80px;
-    height: 30px;
-    border-radius: 2px;
-    background: $light-green;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    font-size: 14px;
-    color: $dark-green;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    @include displayFlex(center,center);
-}
 
-
-
-.restaurantmenu {
-    position: relative;
-    margin-top: -40px;
-    padding: 0 13px;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    background-color: $main-bg-color;
-    @include displayFlex(null,null,column,40px);
-    @include respondTo(md) {
-        padding: 0 210px 0 210px;
-    }
-    @include respondTo(lg) {
-        margin-left:180px;
-        margin-right: 180px;
-    }
-    .restaurantmenu_title {
-        margin: 32px 4px 0 4px;
-        padding-right: 24px;
+.coursecard {
+    overflow: hidden;
+    height: 69px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 15px;
+    background-color: $white;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    @include displayFlex(space-between);
+    .card_content {
         @include displayFlex(space-between);
-        .hearticons {
-            position: relative;
-            top: 8px;
+        @extend .text-ellips;
+        width: 100%;
+        margin: 0 15px;
+        .card_title {
+            @include displayFlex(center,null,column,5px);
+            @extend .text-ellips;
         }
-        @include respondTo(md) {
-            margin: 51px 0 0 0;
-            @include displayFlex(center,null,null,24px)
-        }
-    }
-    section {
-        @include displayFlex(null,null,column,12px);
-        .sectiontitle {
-            @include displayFlex(null,null,column,3px);
-        }
-        article {
-            overflow: hidden;
-            height: 69px;
-            margin-left: 0px;
-            margin-right: 0px;
-            border-radius: 15px;
-            background-color: $white;
-            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
-            @include displayFlex(space-between);
-            .card_content {
-                @include displayFlex(space-between);
-                @extend .text-ellips;
-                width: 100%;
-                margin: 0 15px;
-                .card_title {
-                    @include displayFlex(center,null,column,5px);
-                    @extend .text-ellips;
-                }
-                .card_price {
-                    @include displayFlex(null,end);
-                    margin-bottom: 12px;
-                }
-            }
+        .card_price {
+            @include displayFlex(null,end);
+            margin-bottom: 12px;
         }
     }
 }

@@ -1,6 +1,6 @@
 header {
     @include displayFlex(center,null,column);
-    .logo {
+    .header__logo {
         width: 100%;
         margin: 14px auto 14px auto;
         @include displayFlex(center);
