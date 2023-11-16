@@ -12,7 +12,7 @@ body {
     z-index: 1;
     background-color: $main-color;
     animation-name: loader;
-    animation-duration: 3s;
+    animation-duration: 4s;
     .loader-content {
         font-family: $secundary-font;
         font-size: 50px;
@@ -20,6 +20,7 @@ body {
         transform: translateY(1080px);
         animation-name: loader-content;
         animation-duration: 3s;
+        animation-delay: 1s;
     }
 }
 
