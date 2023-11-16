@@ -79,11 +79,6 @@ main {
             .sectiontitle {
                 @include displayFlex(null,null,column,3px);
             }
-            transform: translateY(100px);
-            opacity: 0%;
-            animation-name: sectionimportation;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
         }
     }
     
@@ -164,6 +159,20 @@ main {
     background-color: $white;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
     @include displayFlex(space-between);
+    transform: translateX(100px);
+    opacity: 0%;
+    animation-name: sectionimportation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    &:first-of-type {
+        animation-delay: 0s;
+    }
+    &:nth-of-type(2) {
+        animation-delay:0.5s;
+    }
+    &:last-of-type {
+        animation-delay:1s;
+    }
     .card_content {
         @include displayFlex(space-between);
         @extend .text-ellips;

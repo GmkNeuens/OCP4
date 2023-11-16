@@ -25,13 +25,13 @@
 .hearticons {
     position: relative;
     &:hover .filledhearticon {
-        scale: 1;
+        transform: scale(1);
     }
     .filledhearticon {
         position: absolute;
         left: 0;
-        scale: 0;
-        transition-property: scale;
+        transform: scale(0);
+        transition-property: transform;
         transition-duration: 200ms;
     }
 }
