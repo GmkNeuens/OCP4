@@ -1,0 +1,13 @@
+@keyframes loader {
+    0% {visibility: visible;}
+    50% {visibility: visible; height: 100%;}
+    75% {visibility: visible; opacity: 100%; height: 56px;}
+    100% {visibility: hidden; opacity: 0%; height: 56px;}
+}
+
+@keyframes loader-content {
+    25% {transform: translateY(0); font-size: 50px;}
+    50% {transform: translateY(0); font-size: 50px;}
+    75% {transform: translateY(0); font-size: 30px;}
+    100% {transform: translateY(0); font-size: 30px;}
+}

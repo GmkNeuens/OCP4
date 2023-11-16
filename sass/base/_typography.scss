@@ -1,12 +1,13 @@
 h1 {
   margin: 0;
   &.titlesection_h1 {
-    margin-top: 39px;
     width: 275px;
-    height: 68px;
     text-align: center;
     font-size: 24px;
     font-weight: 700;
+    @include respondTo(md) {
+      width: auto;
+    }
     }
   &.restaurantmenu_h1{
     height: 27px;
@@ -20,11 +21,8 @@ h1 {
 h2 {
   margin: 0;
   &.titlesection_h2 {
-    margin-top: 48px;
     margin-bottom: 26px;
-    margin-left: 20px;
-    width: 275px;
-    height: 31px;
+    margin-left: 3px;
     font-size: 24px;
     font-weight: 700;
   }
@@ -51,11 +49,13 @@ p {
     margin: 0;
     &.titlesection_p {
       width: 315px;
-      height: 46px;
       text-align: center;
       font-size: 18px;
       font-weight: 300;
       color: $dark-grey;
+      @include respondTo(md) {
+        width: auto;
+      }
     }
     &.restaurantsection_p {
       font-size: 17px;
@@ -74,11 +74,7 @@ a {
 }
 
 .titlesection_h2 {
-  margin-top: 48px;
   margin-bottom: 26px;
-  margin-left: 20px;
-  width: 275px;
-  height: 31px;
   font-size: 24px;
   font-weight: 700;
 }

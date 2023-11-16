@@ -4,7 +4,7 @@
     height: 50px;
     background-color: $light-grey;
     box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    @include displayFlex(center,center,null,null,wrap);
+    @include displayFlex(center,center,null,null);
     form {
         @include displayFlex(null,null,null,17px);
     }

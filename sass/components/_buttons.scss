@@ -19,11 +19,10 @@
     transition-property: opacity, box-shadow;
     transition-duration: 200ms;
     &.button_explore {
-        margin-top: 27px;
-        margin-bottom: 57px;
+        margin-top: 9px;
     }
     &.button_order {
-      margin: 40px 0;
+      margin: 28px 0 40px 0;
     }
     }
 }

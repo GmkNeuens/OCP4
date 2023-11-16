@@ -2,6 +2,11 @@ footer {
     padding: 22px 25px;
     background-color: $dark-grey;
     @include displayFlex(null,null,column,16px);
+    @include respondTo(md) {
+        @include displayFlex(flex-start,flex-end,row-reverse,80px);
+        height: 54px;
+        padding: 30px 25px;
+    }
     .footer_title {
         font-family: $secundary-font;
         color: $white;
@@ -10,9 +15,8 @@ footer {
     nav {
         @include displayFlex(null,null,column,7px);
         color: $white;
-        span {
-            position: absolute;
-            left: 50px;
+        @include respondTo(md) {
+            @include displayFlex(null,null,row,16px);
         }
     }
 }

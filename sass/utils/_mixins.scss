@@ -7,9 +7,22 @@
     wrap: $wrap;
 }
 
+@mixin displayGrid($columns: null, $rows: null, $cgap: null,$rgap: null) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    grid-column-gap: $cgap;
+    grid-row-gap: $rgap;
+}
+
 @mixin respondTo($breakpoint){
     @if $breakpoint == md{
         @media (min-width: 1025px) {
+            @content;
+        }
+    }
+    @if $breakpoint == lg{
+        @media (min-width: 1441px) {
             @content;
         }
     }
