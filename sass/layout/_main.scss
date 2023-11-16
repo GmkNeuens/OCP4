@@ -79,6 +79,11 @@ main {
             .sectiontitle {
                 @include displayFlex(null,null,column,3px);
             }
+            transform: translateY(100px);
+            opacity: 0%;
+            animation-name: sectionimportation;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
         }
     }
     

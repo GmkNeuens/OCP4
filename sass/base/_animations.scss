@@ -20,3 +20,7 @@
     75% {transform: translateY(0); font-size: 30px; color: $black;}
     100% {transform: translateY(0); font-size: 30px; color: $black;}
 }
+
+@keyframes sectionimportation {
+    100% {transform:translateY(0); opacity: 100%;}
+}
